@@ -26,7 +26,8 @@ import pandas as pd
 import seaborn as sbn
 df=pd.read_csv("/content/data.csv")
 df.info()
-df.isnull().sum()from sklearn.preprocessing import LabelEncoder
+df.isnull().sum()
+from sklearn.preprocessing import LabelEncoder
 le = LabelEncoder()
 df['Ord_2'] = le.fit_transform(df['Ord_2'])
 sbn.set(style ="darkgrid")
